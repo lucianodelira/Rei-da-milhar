@@ -60,154 +60,150 @@
   <!-- Preload do iframe principal -->
   <link rel="preload" as="document" href="https://app.acertos.club/pr/qcGoRMK0">
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background: #000;
-      font-family: system-ui, sans-serif;
-      color: #fff;
-    }
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      width: 100%;
-    }
-    .iframe-container {
-      flex: 1;
-      width: 100%;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 5px;
-      padding: 5px;
-      background: #000;
-    }
-    .button {
-      background: #006400;
-      color: white;
-      padding: 5px 8px;
-      border-radius: 8px;
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    }
-    .button.banca {
-      background: #000080;
-    }
-    .button.tutorial {
-      background: #673AB7;
-    }
-    .button img {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-    }
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: system-ui, sans-serif;
+    color: #fff;
+  }
 
-    /* Estilo básico para evitar CLS */
-    .logo-container img {
-      width: 256px;
-      height: 170px;
-      object-fit: contain;
-      display: block;
-    }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
 
-    .content-container {
-      min-height: 300px; /* Reserve espaço visível enquanto carrega */
-    }
+  .iframe-container {
+    flex: 1;
+    width: 100%;
+  }
 
-    .button-container {
-      min-height: 60px; /* Evita deslocamento ao carregar botões */
-    }
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
-    #install-banner {
-      display: none;
-      position: fixed;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      background: #111;
-      color: #fff;
-      padding: 16px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.6);
-      z-index: 9999;
-      text-align: center;
-      min-height: 100px; /* Evita deslocamento ao aparecer */
-    }
-  </style>
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    background: #000;
+  }
+
+  .button {
+    background: #006400;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 999px; /* Botões redondos */
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+
+  .button.banca {
+    background: #000080;
+  }
+
+  .button.tutorial {
+    background: #673AB7;
+  }
+
+  .button img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .logo-container img {
+    width: 256px;
+    height: 170px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .content-container {
+    min-height: 300px;
+  }
+
+  .button-container {
+    min-height: 60px;
+  }
+
+  #install-banner {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #111;
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    z-index: 9999;
+    text-align: center;
+    min-height: 100px;
+  }
+</style>
 </head>
 <body>
 
-  <!-- Dados estruturados para SEO local e organização -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "ACERTOS CLUB",
-    "url": "https://www.acertosclub.com.br",
-    "logo": "https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp",
-    "sameAs": [
-      "https://www.instagram.com/acertos.club",
-      "https://www.facebook.com/acertos.club"
-    ]
-  }
-  </script>
+<!-- Dados estruturados para SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "ACERTOS CLUB",
+  "url": "https://www.acertosclub.com.br",
+  "logo": "https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp",
+  "sameAs": [
+    "https://www.instagram.com/acertos.club",
+    "https://www.facebook.com/acertos.club"
+  ]
+}
+</script>
 
+<script defer>
+  (function () {
+    if (window.location.hostname === "acertosclub.com.br") {
+      window.location.replace("https://www.acertosclub.com.br");
+    }
+  })();
+</script>
 
-
-  <script defer>
-    (function () {
-      if (window.location.hostname === "acertosclub.com.br") {
-        window.location.replace("https://www.acertosclub.com.br");
-      }
-    })();
-  </script>
-
-
-   <div class="container">
-    <div class="iframe-container">
-      <iframe allow='clipboard-read; clipboard-write' frameborder='0' height='95%' id='embeddedIframe' loading='lazy' sandbox='allow-scripts allow-same-origin' src='https://app.acertos.club/pr/qcGoRMK0' title='Conteúdo interativo do Acertos Club' width='100%'>
-</iframe>
-    </div>
-
-
-
-    <div class="buttons">
-      <a class="button" href="https://play.google.com/store/apps/details?id=com.acertosclub.app&pcampaignid=web_share">📲Baixar </a>
-      <a class="button banca" href="https://www.feiticeiravip.com.br" target="_blank">
-        <img src="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/refs/heads/main/icons/minas.webp" alt="Ícone" width="20" height="20" />
-        Feiticeira
-      </a>
-      <a class="button tutorial" href="https://www.feiticeiravip.com" target="_blank" rel="noopener noreferrer">
-        📘 Tutorial
-      </a>
-      <a class="button" style="background: #004d00;" href="https://wa.me/5583993209139?text=Ol%C3%A1%20Promotor%2C%20preciso%20de%20ajuda%20!" target="_blank" rel="noopener noreferrer">
-        💬 Suporte
-      </a>
-    </div>
+<div class="container">
+  <div class="iframe-container">
+    <iframe allow='clipboard-read; clipboard-write' frameborder='0' height='95%' id='embeddedIframe' loading='lazy' sandbox='allow-scripts allow-same-origin' src='https://app.acertos.club/pr/qcGoRMK0' title='Conteúdo interativo do Acertos Club' width='100%'></iframe>
   </div>
 
-  <!-- Banner de instalação -->
-  <div id="install-banner">
-    <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
-    <button onclick="instalarApp()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">Instalar App
-::contentReference[oaicite:23]{index=23}
+  <div class="buttons">
+    <a class="button" href="https://play.google.com/store/apps/details?id=com.acertosclub.app&pcampaignid=web_share">📲 Baixar</a>
+    <a class="button banca" href="https://www.feiticeiravip.com.br" target="_blank">
+      <img src="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/refs/heads/main/icons/minas.webp" alt="Ícone" />
+      Feiticeira
+    </a>
+    <a class="button tutorial" href="https://www.feiticeiravip.com" target="_blank" rel="noopener noreferrer">📘 Tutorial</a>
+    <a class="button" style="background: #004d00;" href="https://wa.me/5583993209139?text=Ol%C3%A1%20Promotor%2C%20preciso%20de%20ajuda%20!" target="_blank" rel="noopener noreferrer">💬 Suporte</a>
+  </div>
+</div>
 
+<!-- Banner de instalação -->
+<div id="install-banner">
+  <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
+  <button onclick="instalarApp()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 999px; font-weight: bold; cursor: pointer;">
+    Instalar App
   </button>
 </div>
 
@@ -236,12 +232,10 @@
     }
   }
 
-  // Carregamento assíncrono do iframe principal
   window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('embeddedIframe').src = "https://app.acertos.club/pr/qcGoRMK0";
   });
 </script>
-
 
 
 
