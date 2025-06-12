@@ -1,0 +1,451 @@
+<html lang="pt-BR">
+<head>
+
+
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; frame-src *; connect-src *;">
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+  <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+  <meta name="referrer" content="no-referrer" />
+
+  <title>Resultado do Jogo do Bicho, Loterias e Apostas Online | ACERTOS CLUB</title>
+  <meta name="description" content="Confira os resultados atualizados do jogo do bicho, loterias populares e apostas esportivas. ACERTOS CLUB oferece Pix imediato, suporte 24h e a melhor banca de apostas!" />
+  <meta name="keywords" content="resultado do jogo do bicho, jogo do bicho de hoje, banca acertos club, apostas com pix, loterias atualizadas, acertosclub, jogo do bicho paraíba, resultados do jogo do bicho, apostas online confiáveis, cassino online, palpites futebol, acertos.club, apostas seguras, pix na hora, banca acertos resultados" />
+  <meta name="author" content="ACERTOS CLUB" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Resultado do Jogo do Bicho e Apostas Online | ACERTOS CLUB" />
+  <meta property="og:description" content="Veja os resultados do bicho de hoje, jogue online com Pix imediato e aproveite os palpites atualizados. ACERTOS CLUB é a banca número 1 do Brasil!" />
+  <meta property="og:image" content="https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp" />
+  <meta property="og:url" content="https://www.acertosclub.com.br" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Apostas Online e Resultados do Bicho Atualizados | ACERTOS CLUB" />
+  <meta name="twitter:description" content="Resultados diários do jogo do bicho, apostas esportivas com pagamento instantâneo via Pix. Acesse agora a ACERTOS CLUB!" />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/341548fa5ae78bd76f142b93239ee1485f3a071e/icons/LotoHack.webp" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/341548fa5ae78bd76f142b93239ee1485f3a071e/icons/LotoHack.webp" type="image/png">
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/341548fa5ae78bd76f142b93239ee1485f3a071e/icons/LotoHack.webp" type="image/png">
+
+  <link rel="manifest" href="manifest.json" />
+  <link rel="canonical" href="https://www.acertosclub.com.br" />
+
+    <style>
+        /* Estilos gerais para o banner */
+        #app-banner {
+            background-color: #4CAF50; /* Cor de fundo do banner */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 50%;  /* Centraliza o banner na vertical */
+            left: 50%;  /* Centraliza o banner na horizontal */
+            transform: translate(-50%, -50%); /* Centraliza o banner completamente */
+            width: 50%;  /* Metade da largura da tela */
+            height: auto; /* Ajuste a altura conforme o conteúdo */
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;  /* Bordas arredondadas */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        /* Estilo da imagem do ícone com fundo diferente */
+        #app-banner img {
+            width: 120px; /* Aumenta a largura da imagem */
+            height: 120px; /* Aumenta a altura da imagem */
+            margin-bottom: 20px; /* Espaço entre a imagem e o texto */
+            cursor: pointer; /* Aponta o cursor como uma mão, indicando que a imagem é clicável */
+            background-color: 	#FFFAFA; /* Cor de fundo amarela para a imagem */
+            border-radius: 10%; /* Torna a imagem redonda */
+        }
+
+        /* Estilo do texto */
+        #app-banner .banner-text {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo do link "Baixe agora" */
+        #app-banner a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px; /* Destaque para o link */
+            background-color: transparent; /* Remover a cor de fundo */
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        #app-banner a:hover {
+            background-color: #1e5023; /* Cor de fundo do botão quando o mouse passa */
+        }
+
+        /* Estilo do botão de fechar */
+        #close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        #close-btn:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animação para o banner */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            #app-banner {
+                width: 80%;  /* Ajusta para 80% da largura da tela em dispositivos móveis */
+                height: auto;
+            }
+
+            #app-banner img {
+                width: 100px; /* Ajusta o tamanho da imagem para dispositivos móveis */
+                height: 100px;
+            }
+
+            #app-banner .banner-text {
+                font-size: 16px;
+            }
+
+            #app-banner a {
+                font-size: 18px; /* Ajusta o tamanho da fonte no link para dispositivos móveis */
+            }
+        }
+    </style>
+
+
+
+    <!-- Banner com ícone, link e botão de fechar -->
+    <div id="app-banner">
+        <a href="https://play.google.com/store/apps/details?id=com.acertosclub.app&pcampaignid=web_share" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/qAkRYs0Fwg51dt1qJTzcIuiSY8QHpSmiXv2DAkSeeJaBcKX2xnv8SKTCwpEoi0qGpt_a=w240-h480-rw" alt="Ícone do App" />
+        </a>
+        <div class="banner-text">
+            <span>Aplicativo disponível na Play Store!</span>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.acertosclub.app&pcampaignid=web_share" target="_blank">Baixe agora</a>
+        <button id="close-btn" onclick="closeBanner()">×</button>
+    </div>
+
+    <script>
+        // Função para fechar o banner
+        function closeBanner() {
+            document.getElementById('app-banner').style.display = 'none';
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8DBWPE37VV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8DBWPE37VV');
+</script>
+
+
+
+  <!-- Preload do iframe principal -->
+  <link rel="preload" as="document" href="https://app.acertos.club/pr/qcGoRMK0">
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: system-ui, sans-serif;
+      color: #fff;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
+    .iframe-container {
+      flex: 1;
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5px;
+      padding: 5px;
+      background: #000;
+    }
+    .button {
+      background: #006400;
+      color: white;
+      padding: 5px 8px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .button.banca {
+      background: #000080;
+    }
+    .button.tutorial {
+      background: #673AB7;
+    }
+    .button img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+
+    /* Estilo básico para evitar CLS */
+    .logo-container img {
+      width: 256px;
+      height: 170px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .content-container {
+      min-height: 300px; /* Reserve espaço visível enquanto carrega */
+    }
+
+    .button-container {
+      min-height: 60px; /* Evita deslocamento ao carregar botões */
+    }
+
+    #install-banner {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      background: #111;
+      color: #fff;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      z-index: 9999;
+      text-align: center;
+      min-height: 100px; /* Evita deslocamento ao aparecer */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dados estruturados para SEO local e organização -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ACERTOS CLUB",
+    "url": "https://www.acertosclub.com.br",
+    "logo": "https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp",
+    "sameAs": [
+      "https://www.instagram.com/acertos.club",
+      "https://www.facebook.com/acertos.club"
+    ]
+  }
+  </script>
+
+
+
+  <script defer>
+    (function () {
+      if (window.location.hostname === "acertosclub.com.br") {
+        window.location.replace("https://www.acertosclub.com.br");
+      }
+    })();
+  </script>
+
+
+   <div class="container">
+    <div class="iframe-container">
+      <iframe allow='clipboard-read; clipboard-write' frameborder='0' height='95%' id='embeddedIframe' loading='lazy' sandbox='allow-scripts allow-same-origin' src='https://app.acertos.club/pr/qcGoRMK0' title='Conteúdo interativo do Acertos Club' width='100%'>
+</iframe>
+    </div>
+
+
+
+    <div class="buttons">
+      <a class="button" href="https://play.google.com/store/apps/details?id=com.acertosclub.app&pcampaignid=web_share">📲Baixar </a>
+      <a class="button banca" href="https://www.feiticeiravip.com.br" target="_blank">
+        <img src="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/refs/heads/main/icons/minas.webp" alt="Ícone" width="20" height="20" />
+        Feiticeira
+      </a>
+      <a class="button tutorial" href="https://www.feiticeiravip.com" target="_blank" rel="noopener noreferrer">
+        📘 Tutorial
+      </a>
+      <a class="button" style="background: #004d00;" href="https://wa.me/5583993209139?text=Ol%C3%A1%20Promotor%2C%20preciso%20de%20ajuda%20!" target="_blank" rel="noopener noreferrer">
+        💬 Suporte
+      </a>
+    </div>
+  </div>
+
+  <!-- Banner de instalação -->
+  <div id="install-banner">
+    <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
+    <button onclick="instalarApp()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">Instalar App
+::contentReference[oaicite:23]{index=23}
+
+  </button>
+</div>
+
+<script defer>
+  let deferredPrompt;
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    const banner = document.getElementById('install-banner');
+    if (banner) banner.style.display = 'block';
+  });
+
+  function instalarApp() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('Usuário aceitou instalar o app');
+        } else {
+          console.log('Usuário recusou instalar o app');
+        }
+        deferredPrompt = null;
+        document.getElementById('install-banner').style.display = 'none';
+      });
+    }
+  }
+
+  // Carregamento assíncrono do iframe principal
+  window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('embeddedIframe').src = "https://app.acertos.club/pr/qcGoRMK0";
+  });
+</script>
+
+
+<!-- Banner TigerClub - Mostra 1x por dia -->
+<style>
+  #tiger-banner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 12px;
+    max-width: 90vw;
+  }
+
+  #tiger-banner img {
+    width: 70vw;
+    max-width: 500px;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+  }
+
+  #close-tiger-banner {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 30px;
+  }
+</style>
+
+<div id="tiger-banner">
+  <button id="close-tiger-banner">&times;</button>
+  <a href="https://app.tigersclub.vip/pr/cmDAwXiS" target="_blank">
+    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhDfU7KlZtVpdu4yPEuuPbxlsbYhyW7EKKH4uJT934IQ26BKFHoNY-PQkAGoxPW6pFATINR5p73r53zbxnqbc5Wtk3IT2nCiloRbHImtf_pwecqP7B7a8mpw1Aezc-vr0TKQ4X_uidZfN5kcTnftOIqKuq6MN5JnXg6A651tumHvy4_CJi8GrTEE6IDDhQ=s1600" alt="Promoção Tiger Club" />
+  </a>
+</div>
+
+<script>
+  window.addEventListener('load', function () {
+    const lastShown = localStorage.getItem('tigerBannerLastShown');
+    const now = new Date().getTime();
+    const oneDay = 24 * 60 * 60 * 1000; // 24 horas em ms
+
+    if (!lastShown || now - lastShown > oneDay) {
+      // Espera 5 segundos para mostrar
+      setTimeout(() => {
+        document.getElementById("tiger-banner").style.display = "block";
+        // Atualiza a data de exibição
+        localStorage.setItem('tigerBannerLastShown', now.toString());
+      }, 5000);
+    }
+
+    document.getElementById("close-tiger-banner").onclick = function () {
+      document.getElementById("tiger-banner").style.display = "none";
+    };
+  });
+</script>
+
+
+    
+</body>
+</html>
