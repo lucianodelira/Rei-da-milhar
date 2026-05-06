@@ -185,20 +185,78 @@
 
 
 
+<style>
+.container {
+  width: 100%;
+  text-align: center;
+}
+
+.iframe-container {
+  width: 100%;
+  height: 500px; /* ajuste se quiser */
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* BOTÕES MENORES E ORGANIZADOS */
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 6px 10px; /* menor */
+  font-size: 12px;   /* menor */
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  background: #006400;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* botão cassino diferente */
+.button.banca {
+  background: #000;
+}
+</style>
+
 <div class="container">
+  
   <div class="iframe-container">
-    <iframe allow='clipboard-read; clipboard-write' frameborder='0' height='95%' id='embeddedIframe' loading='lazy' sandbox='allow-scripts allow-same-origin' src='https://app.acertos.club/pr/Brj5b9RM' title='Conteúdo interativo do Acertos Club' width='100%'></iframe>
+    <iframe 
+      allow="clipboard-read; clipboard-write"
+      id="embeddedIframe"
+      src="https://app.acertos.club/pr/Brj5b9RM"
+      loading="lazy"
+      sandbox="allow-scripts allow-same-origin"
+      title="Conteúdo interativo do Acertos Club">
+    </iframe>
   </div>
 
+  <!-- BOTÕES AGORA FICAM EMBAIXO -->
   <div class="buttons">
+    <a class="button banca" href="https://app.acertos.club/pr/Brj5b9RM" target="_blank">CASSINO</a>
     
-    <a class="button banca" href="https://app.tigersclub.vip/pr/Sdyz43qa" target="_blank">🐾Tiger</a>
-    
-    <a class="button" style="background: #004d00;" href="https://chat.whatsapp.com/KqgZa4Nzpff2uCAuBOTc8i" target="_blank" rel="noopener noreferrer">💬GRUPO/PALPITES</a>
+    <a class="button" style="background: #004d00;" 
+       href="https://chat.whatsapp.com/KqgZa4Nzpff2uCAuBOTc8i" 
+       target="_blank">💬GRUPO</a>
+
     <a class="button" href="https://www.brasileirao.site/">⚽</a>
   </div>
-</div>
 
+</div>
 <!-- Banner de instalação -->
 <div id="install-banner">
   <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
