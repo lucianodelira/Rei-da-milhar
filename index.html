@@ -1,308 +1,292 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-
-
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: blob:; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; frame-src *; connect-src *;">
   <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
   <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
   <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
   <meta name="referrer" content="no-referrer" />
-
-  <title>Resultado do Jogo do Bicho, Loterias e Apostas Online | Reidamilhar </title>
+  <title>Resultado do Jogo do Bicho, Loterias e Apostas Online | Reidamilhar</title>
   <meta name="description" content="Confira os resultados atualizados do jogo do bicho, loterias populares e apostas esportivas. ACERTOS CLUB oferece Pix imediato, suporte 24h e a melhor banca de apostas!" />
   <meta name="keywords" content="resultado do jogo do bicho, jogo do bicho de hoje, banca acertos club, apostas com pix, loterias atualizadas, reidamilhar, jogo do bicho paraíba, resultados do jogo do bicho, apostas online confiáveis, cassino online, palpites futebol, acertos.club, apostas seguras, pix na hora, banca acertos resultados" />
   <meta name="author" content="ACERTOS CLUB" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Resultado do Jogo do Bicho e Apostas Online | ACERTOS CLUB" />
   <meta property="og:description" content="Veja os resultados do bicho de hoje, jogue online com Pix imediato e aproveite os palpites atualizados. ACERTOS CLUB é a banca número 1 do Brasil!" />
   <meta property="og:image" content="https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp" />
   <meta property="og:url" content="https://www.reidamilhar.com" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Apostas Online e Resultados do Bicho Atualizados | ACERTOS CLUB" />
   <meta name="twitter:description" content="Resultados diários do jogo do bicho, apostas esportivas com pagamento instantâneo via Pix. Acesse agora a ACERTOS CLUB!" />
   <meta name="twitter:image" content="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/341548fa5ae78bd76f142b93239ee1485f3a071e/icons/LotoHack.webp" />
-
-  <!-- Favicon -->
   <link rel="icon" href="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/341548fa5ae78bd76f142b93239ee1485f3a071e/icons/LotoHack.webp" type="image/png">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/lucianodelira/www.acertosclub.com.br/341548fa5ae78bd76f142b93239ee1485f3a071e/icons/LotoHack.webp" type="image/png">
-
   <link rel="manifest" href="manifest.json" />
   <link rel="canonical" href="https://www.reidamilhar.com" />
-
-        
-     
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZMB6ZL5R2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KZMB6ZL5R2');
-</script>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  <!-- Preload do iframe principal -->
   <link rel="preload" as="document" href="https://app.acertos.online/pr/Brj5b9RM">
 
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow: hidden;
-    background: #000;
-    font-family: system-ui, sans-serif;
-    color: #fff;
-  }
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZMB6ZL5R2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KZMB6ZL5R2');
+  </script>
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-  }
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      font-family: system-ui, Arial, sans-serif;
+      color: #fff;
+    }
 
-  .iframe-container {
-    flex: 1;
-    width: 100%;
-  }
+    #embeddedIframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 48px;
+      width: 100%;
+      height: calc(100vh - 48px);
+      height: calc(100dvh - 48px);
+      border: 0;
+      z-index: 1;
+    }
 
-  iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
+    /* ===== FAIXA INFERIOR ===== */
+    #bottomBar {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 48px;
+      z-index: 10000;
+      background: #0d0d0d;
+      border-top: 1px solid #222;
+      display: flex;
+      align-items: stretch;
+      padding: 0 8px calc(env(safe-area-inset-bottom, 0px));
+      box-sizing: border-box;
+    }
 
-  .buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    padding: 5px;
-    background: #000;
-  }
+    #supportHandle {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 10px;
+      cursor: grab;
+      user-select: none;
+      -webkit-user-select: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      min-width: 0;
+    }
+    #supportHandle:active { cursor: grabbing; }
+    #supportHandle .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 6px rgba(34, 197, 94, .7);
+      flex-shrink: 0;
+    }
+    #supportHandle .arrow { font-size: 11px; opacity: .9; flex-shrink: 0; }
+    #supportHandle .label {
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      white-space: nowrap;
+    }
+    #supportHandle .hint {
+      font-size: 11px;
+      font-weight: 500;
+      opacity: .5;
+      margin-left: auto;
+      white-space: nowrap;
+    }
 
-  .button {
-    background: #006400;
-    color: white;
-    padding: 8px 14px;
-    border-radius: 999px; /* Botões redondos */
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  }
+    #supportSheet {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 48px;
+      z-index: 9999;
+      background: #111;
+      border-top: 1px solid #222;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .25s ease, opacity .2s ease;
+      pointer-events: none;
+    }
+    #supportSheet.open {
+      max-height: 120px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    #supportContent {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      padding: 0 12px;
+    }
+    #supportLink, .support-extra {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 120px;
+      padding: 10px 18px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    #supportLink {
+      background: #25D366;
+      color: #082b16;
+    }
+    .support-extra.cassino {
+      background: #000;
+      color: #fff;
+      border: 1px solid #333;
+    }
+    .support-extra.grupo {
+      background: #004d00;
+      color: #fff;
+    }
+@media (max-width: 500px) {
+      #supportHandle .hint { display: none; }
+}
 
-  .button.banca {
-    background: #000080;
-  }
-
-  .button.tutorial {
-    background: #673AB7;
-  }
-
-  .button img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
-
-  .logo-container img {
-    width: 256px;
-    height: 170px;
-    object-fit: contain;
-    display: block;
-  }
-
-  .content-container {
-    min-height: 300px;
-  }
-
-  .button-container {
-    min-height: 60px;
-  }
-
-  #install-banner {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background: #111;
-    color: #fff;
-    padding: 16px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
-    z-index: 9999;
-    text-align: center;
-    min-height: 100px;
-  }
-</style>
+    #install-banner {
+      display: none;
+      position: fixed;
+      bottom: 60px;
+      left: 20px;
+      right: 20px;
+      background: #111;
+      color: #fff;
+      padding: 16px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      z-index: 9998;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "ACERTOS CLUB",
+    "url": "https://www.reidamilhar.com",
+    "logo": "https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp",
+    "sameAs": [
+      "https://www.instagram.com/acertos.club",
+      "https://www.facebook.com/acertos.club"
+    ]
+  }
+  </script>
 
-<!-- Dados estruturados para SEO -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "ACERTOS CLUB",
-  "url": "https://www.reidamilhar.com",
-  "logo": "https://res.cloudinary.com/dox0ijyes/image/upload/v1746302977/acertos/mina_ca7dtn.webp",
-  "sameAs": [
-    "https://www.instagram.com/acertos.club",
-    "https://www.facebook.com/acertos.club"
-  ]
-}
-</script>
+  <iframe
+    id="embeddedIframe"
+    src="https://app.acertos.online/pr/Brj5b9RM"
+    title="Conteúdo interativo do Acertos Club"
+    width="100%"
+    frameborder="0"
+    loading="lazy"
+    allow="clipboard-read; clipboard-write; fullscreen"
+  ></iframe>
 
-
-
-<style>
-.container {
-  width: 100%;
-  text-align: center;
-}
-
-.iframe-container {
-  width: 100%;
-  height: 500px; /* ajuste se quiser */
-}
-
-.iframe-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-/* BOTÕES MENORES E ORGANIZADOS */
-.buttons {
-  margin: 0;
-  padding: 2px 4px; /* bem menor */
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  flex-wrap: nowrap; /* evita quebrar linha */
-  background: #000;
-}
-
-.button {
-  padding: 6px 10px; /* menor */
-  font-size: 12px;   /* menor */
-  border-radius: 6px;
-  text-decoration: none;
-  color: #fff;
-  background: #006400;
-  font-weight: bold;
-  transition: 0.2s;
-}
-
-.button:hover {
-  opacity: 0.8;
-}
-
-/* botão cassino diferente */
-.button.banca {
-  background: #000;
-}
-</style>
-
-<div class="container">
-  
-  <div class="iframe-container">
-    <iframe 
-      allow="clipboard-read; clipboard-write"
-      id="embeddedIframe"
-      src="https://app.acertos.online/pr/Brj5b9RM"
-      loading="lazy"
-    
-      title="Conteúdo interativo do Acertos Club">
-    </iframe>
+  <!-- Painel suporte expandido -->
+  <div id="supportSheet" aria-hidden="true">
+    <div id="supportContent">
+      <a id="supportLink" href="https://chat.whatsapp.com/KqgZa4Nzpff2uCAuBOTc8i" target="_blank" rel="noopener noreferrer">💬 Grupo suporte</a>
+      <a class="support-extra cassino" href="https://app.acertos.online/pr/Brj5b9RM" target="_blank" rel="noopener noreferrer">CASSINO</a>
+    </div>
   </div>
 
-  <!-- BOTÕES AGORA FICAM EMBAIXO -->
-  <div class="buttons">
-    <a class="button banca" href="https://app.acertos.online/pr/Brj5b9RM" target="_blank">CASSINO</a>
-    
-    <a class="button" style="background: #004d00;" 
-       href="https://chat.whatsapp.com/KqgZa4Nzpff2uCAuBOTc8i" 
-       target="_blank">💬GRUPO</a>
-
-    <a class="button" href="https://www.brasileirao.site/">⚽</a>
-  </div>
-
+  <!-- FAIXA INFERIOR -->
+  <div id="bottomBar">
+    <div id="supportHandle" role="button" tabindex="0" aria-expanded="false" aria-controls="supportSheet">
+      <span class="arrow" aria-hidden="true">&#9650;</span>
+      <span class="dot" aria-hidden="true"></span>
+      <span class="label">SUPORTE</span>
+      <span class="hint">Arraste para cima</span>
+    </div>
 </div>
-<!-- Banner de instalação -->
 <div id="install-banner">
-  <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
-  <button onclick="instalarApp()" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 999px; font-weight: bold; cursor: pointer;">
-    Instalar App
-  </button>
-</div>
+    <p style="margin: 0 0 10px;">📲 Instale nosso app para acesso mais rápido e fácil!</p>
+    <button onclick="instalarApp()" type="button" style="background: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 999px; font-weight: bold; cursor: pointer;">
+      Instalar App
+    </button>
+  </div>
 
-<script defer>
+  <script>
+  (function () {
+    var sheet = document.getElementById('supportSheet');
+    var handle = document.getElementById('supportHandle');
+    var startY = null;
+
+    function setSupportOpen(open) {
+      sheet.classList.toggle('open', open);
+      handle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      sheet.setAttribute('aria-hidden', open ? 'false' : 'true');
+      var arrow = handle.querySelector('.arrow');
+      if (arrow) arrow.textContent = open ? '\u25BC' : '\u25B2';
+    }
+    function toggleSupport() {
+      setSupportOpen(!sheet.classList.contains('open'));
+    }
+    handle.addEventListener('click', toggleSupport);
+    handle.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleSupport(); }
+      if (e.key === 'Escape') setSupportOpen(false);
+    });
+    handle.addEventListener('touchstart', function (e) {
+      if (e.touches && e.touches.length) startY = e.touches[0].clientY;
+    }, { passive: true });
+    handle.addEventListener('touchend', function (e) {
+      if (startY === null || !e.changedTouches || !e.changedTouches.length) return;
+      var d = e.changedTouches[0].clientY - startY;
+      if (d < -12) setSupportOpen(true);
+      else if (d > 12) setSupportOpen(false);
+      startY = null;
+    }, { passive: true });
+
+  })();
+  </script>
+
+  <script>
   let deferredPrompt;
-
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
     const banner = document.getElementById('install-banner');
     if (banner) banner.style.display = 'block';
   });
-
   function instalarApp() {
     if (deferredPrompt) {
       deferredPrompt.prompt();
-      deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-          console.log('Usuário aceitou instalar o app');
-        } else {
-          console.log('Usuário recusou instalar o app');
-        }
+      deferredPrompt.userChoice.then(function () {
         deferredPrompt = null;
         document.getElementById('install-banner').style.display = 'none';
       });
     }
   }
-
-  window.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('embeddedIframe').src = "https://app.acertos.online/pr/Brj5b9RM";
-  });
-</script>
-
-
-
-
-
-
-    
+  </script>
 </body>
 </html>
-
